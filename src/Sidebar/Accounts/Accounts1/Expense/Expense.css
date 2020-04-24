@@ -1,0 +1,17 @@
+.cm-link {
+	border: 2px solid #0275d8;
+	color: #000 !important;
+	border-radius: 20px;
+	margin: 0.5rem;
+	padding: 0.5rem 1rem;
+	text-align: center;
+}
+
+.cm-link.active {
+	background-color: #0275d8 !important;
+	color: #fff !important;
+}
+
+.round-button {
+	border-radius: 20px;
+}

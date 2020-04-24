@@ -1,0 +1,17 @@
+.card-container {
+  text-align: center;
+  background-color: #e9e9e9;
+  width: 50%;
+  margin: auto;
+  padding: 3rem 5rem 3rem;
+  border-radius: 0.5rem;
+}
+
+.form-group > h4 {
+  padding-bottom: 1.5rem;
+}
+
+.card-container > .form-group > .form-control {
+  width: 80%;
+  margin: auto;
+}

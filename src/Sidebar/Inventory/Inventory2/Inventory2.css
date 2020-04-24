@@ -1,0 +1,31 @@
+.navbar-nav .nav-link.active {
+  background-color: rgba(196, 196, 196, 0.4);
+}
+
+.legend-container {
+  background-color: #d3d3d3;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.legend-container > div {
+  width: 30%;
+}
+
+.legend {
+  height: 8px;
+  width: 10px;
+  border: 1px solid #000;
+  padding-right: 1rem;
+}
+.legend-container p {
+  display: inline;
+  margin: 0.5rem;
+}
+
+span {
+  background-color: black;
+  height: 10px;
+  width: 10px;
+}

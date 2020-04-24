@@ -1,0 +1,35 @@
+.content > nav {
+	position: fixed;
+	width: inherit;
+	background-color: #fff;
+	z-index: 2;
+	padding: 20px;
+}
+
+.content > nav > button.collapsed {
+	right: 0;
+}
+
+.content nav button#sidebarCollapse {
+	margin-right: 1rem;
+	z-index: 10;
+	/* background-color: rgb(140, 114, 123); */
+}
+
+.content nav button#sidebarCollapse:focus {
+	box-shadow: none;
+}
+
+.content button {
+	/* box-shadow: none; */
+	transform: scale(0.9);
+	transition: transform 0.3s ease;
+}
+
+.content > nav > ul > li {
+	padding: 0 1rem;
+}
+
+.content > nav > ul > li > a {
+	font-size: 1.3rem;
+}

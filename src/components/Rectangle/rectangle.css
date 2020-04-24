@@ -1,0 +1,14 @@
+.figure {
+	margin: 1rem;
+	border-radius: 15px;
+	background-color: orange;
+	padding: 0;
+}
+
+.figure p {
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	height: 100px;
+	width: 150px;
+}

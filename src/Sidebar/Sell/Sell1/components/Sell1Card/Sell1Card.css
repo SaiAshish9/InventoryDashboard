@@ -1,0 +1,16 @@
+.row h6 {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background-color: #fff;
+  padding: 0.5rem;
+}
+
+.sell-card .form-check {
+  display: inline;
+}
+
+.net-value {
+  background-color: blue;
+  color: #fff;
+}
