@@ -1,55 +1,35 @@
-import React from "react";
-import { Table, Form } from "react-bootstrap";
+import React from 'react';
+import { Table, Form, Col } from 'react-bootstrap';
+
+const headers = [
+	'Product Name',
+	'Batch',
+	'Expiry',
+	'HSN Code',
+	'GST Total',
+	'IGST %',
+	'SGST %',
+	'CGST %',
+	'Units/Strip'
+];
 
 const NewProductTable = () => {
-  return (
-    <Table className="mt-5">
-      <thead className="thead-light">
-        <tr>
-          <th scope="col">Product Name</th>
-          <th scope="col">Batch</th>
-          <th scope="col">Expiry</th>
-          <th scope="col">HSN Code</th>
-          <th scope="col">GST Total %</th>
-          <th scope="col">IGST %</th>
-          <th scope="col">SGST %</th>
-          <th scope="col">CGST %</th>
-          <th scope="col">Units/Strip</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>
-            <Form.Control type="text" placeholder="Product" />
-          </td>
-          <td>
-            <Form.Control type="text" placeholder="" />
-          </td>
-          <td>
-            <Form.Control type="text" placeholder="" />
-          </td>
-          <td>
-            <Form.Control type="text" placeholder="" />
-          </td>
-          <td>
-            <Form.Control type="text" placeholder="" />
-          </td>
-          <td>
-            <Form.Control type="text" placeholder="" />
-          </td>
-          <td>
-            <Form.Control type="text" placeholder="" />
-          </td>
-          <td>
-            <Form.Control type="text" placeholder="" />
-          </td>
-          <td>
-            <Form.Control type="text" placeholder="" />
-          </td>
-        </tr>
-      </tbody>
-    </Table>
-  );
+	return (
+		<Table className="mt-5">
+			<thead className="thead-light">
+				<tr>{headers.map((i, k) => <th scope="col">{i}</th>)}</tr>
+			</thead>
+			<tbody>
+				<tr>
+					{headers.map(() => (
+						<td>
+							<Form.Control type="text" />
+						</td>
+					))}
+				</tr>
+			</tbody>
+		</Table>
+	);
 };
 
 export default NewProductTable;

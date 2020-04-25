@@ -13,16 +13,17 @@ const Inventory6 = () => {
 			<Form.Row>
 				<Col>
 					<Form.Control
+						className="round-input"
 						type="text"
 						placeholder="Enter Product Name"
 					/>
 				</Col>
 				<Col>
-					<Form.Control as="select" />
+					<Form.Control className="round-input" as="select" />
 				</Col>
 			</Form.Row>
 			<div style={{ textAlign: 'center' }}>
-				<Button size="lg" className="round-button">
+				<Button size="lg" className="round">
 					Load
 				</Button>
 			</div>

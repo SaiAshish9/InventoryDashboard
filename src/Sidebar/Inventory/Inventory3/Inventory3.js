@@ -11,12 +11,10 @@ const Inventory3 = () => {
 				<Form.Group>
 					<h4>No of days of stock holding</h4>
 					<div>
-						<div className="rounded" />
-						<Form.Control type="text" />
-						<div className="rounded" />
+						<Form.Control className="round-input" type="text" />
 					</div>
 				</Form.Group>
-				<Button className="round-button">Save</Button>
+				<Button className="round">Save</Button>
 			</Form>
 		</div>
 	);

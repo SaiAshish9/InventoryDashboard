@@ -13,9 +13,7 @@ const Till = () => {
 			<Navbar>
 				<Nav className="fill">
 					<Nav.Link className="cm-link">Expense</Nav.Link>
-					<Nav.Link className="cm-link" active>
-						Till
-					</Nav.Link>
+					<Nav.Link className="cm-link active">Till</Nav.Link>
 				</Nav>
 			</Navbar>
 			<Row>
@@ -27,7 +25,7 @@ const Till = () => {
 				</Col>
 			</Row>
 			<Row style={{ justifyContent: 'center' }}>
-				<Button size="lg" className="round-button">
+				<Button size="lg" className="round">
 					ADD
 				</Button>
 			</Row>

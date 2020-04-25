@@ -6,30 +6,34 @@ import { FaSearch } from 'react-icons';
 import AtoZ from './components/AtoZ/AtoZ';
 import Nav1 from '../Nav/Nav';
 
+const links = [
+	'All',
+	'Available',
+	'Expiry',
+	'Zero Stock',
+	'Inactive Stock'
+];
+
 const Inventory1 = () => {
 	return (
 		<div>
 			<Nav1 />
 			<Form>
-				<Row>
+				<Row style={{ margin: '0' }}>
 					<Col lg="5">
 						<Form.Group>
 							<Form.Label>Product Name</Form.Label>
-							<Form.Control type="text" className="round" />
+							<Form.Control type="text" className="round-input" />
 						</Form.Group>
 					</Col>
 					<Col lg="5">
 						<Form.Group>
 							<Form.Label>Enter Product</Form.Label>
-							<Form.Control type="text" className="round" />
+							<Form.Control type="text" className="round-input" />
 						</Form.Group>
 					</Col>
 					<Col lg="1">
-						<Button
-							type="submit"
-							variant="dark"
-							className="round-button"
-						>
+						<Button type="submit" variant="dark" className="round">
 							Q
 						</Button>
 					</Col>
@@ -39,11 +43,9 @@ const Inventory1 = () => {
 
 			<Navbar className="mt-5">
 				<Nav className="fill bordered-links">
-					<Nav.Link className="round">All</Nav.Link>
-					<Nav.Link className="round">Available</Nav.Link>
-					<Nav.Link className="round">Expiry</Nav.Link>
-					<Nav.Link className="round">Zero Stock</Nav.Link>
-					<Nav.Link className="round">Inactive Stock</Nav.Link>
+					{links.map((i, k) => (
+						<Nav.Link className="round">{i}</Nav.Link>
+					))}
 				</Nav>
 			</Navbar>
 			{/* <ProductTable /> */}

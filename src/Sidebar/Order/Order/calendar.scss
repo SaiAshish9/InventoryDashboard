@@ -1,0 +1,18 @@
+
+
+
+$base-font-size: 12px;
+$title-font-size: 1.5em;
+
+$primary-color-dark: #eee;
+$primary-color: #333;
+$primary-color-light: #eee;
+$primary-color-text: #eee;
+$accent-color: #eee;
+$primary-text-color: #333;
+$secondary-text-color: #333;
+$divider-color: #e4e4e4;
+$today-bg-color: #eee;
+
+@import "../../../../node_modules/@y0c/react-datepicker/assets/styles/_mixin.scss";
+@import "../../../../node_modules/@y0c/react-datepicker/assets/styles/app.scss";

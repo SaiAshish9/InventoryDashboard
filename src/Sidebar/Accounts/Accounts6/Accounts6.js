@@ -11,15 +11,15 @@ const Accounts6 = () => {
 				<Row>
 					<Col>
 						<Form.Label>From</Form.Label>
-						<Form.Control type="date" />
+						<Form.Control className="round-input" type="date" />
 					</Col>
 					<Col>
 						<Form.Label>To</Form.Label>
-						<Form.Control type="date" />
+						<Form.Control className="round-input" type="date" />
 					</Col>
 				</Row>
 				<Row style={{ justifyContent: 'center' }}>
-					<Button size="lg" type="submit" className="round-button">
+					<Button size="lg" type="submit" className="round">
 						Save
 					</Button>
 				</Row>

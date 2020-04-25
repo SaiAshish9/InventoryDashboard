@@ -8,15 +8,15 @@ const Branch = () => {
 			<Form.Row>
 				<Col>
 					<Form.Label>Branch Name</Form.Label>
-					<Form.Control type="text" />
+					<Form.Control className="round-input" type="text" />
 				</Col>
 				<Col>
 					<Form.Label>Mobile</Form.Label>
-					<Form.Control type="text" />
+					<Form.Control className="round-input" type="text" />
 				</Col>
 			</Form.Row>
 			<div style={{ textAlign: 'center' }}>
-				<Button size="lg" className="round-button">
+				<Button size="lg" className="round">
 					Search
 				</Button>
 			</div>

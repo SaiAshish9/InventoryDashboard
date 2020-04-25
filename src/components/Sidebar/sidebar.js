@@ -13,9 +13,13 @@ const Sidebar = () => {
 	return (
 		<Navbar expand="md" className="sidebar" id="sidebar">
 			<div className="sidebar-header">
-				<img src={Logo} alt="" />
-				<h3 style={{ color: '#ea0f58', display: 'inline' }}>Care</h3>
-				<h3 style={{ color: '#8C727B', display: 'inline' }}>Medicos</h3>
+				{/* <img src={Logo} alt="" /> */}
+				<h5 style={{ marginLeft:12,color: 'white', display: 'inline' }}>
+				 <i>
+				CareMedicos
+				</i>
+				</h5>
+				{/* <h5 style={{ color: 'white', display: 'inline' }}>Medicos</h5> */}
 			</div>
 
 			<Nav className="">
@@ -23,10 +27,13 @@ const Sidebar = () => {
 					<ul>
 {
 	links.map((i,k)=>(
-                        <li className='li-item'>
+                        <li className='li-item' style={{margin:3}}>
 							<Link to={i.path} >
 								{i.icon}
-								{i.name}
+							<p style={{display:'inline',marginLeft:15,marginTop:-5}}>
+							{i.name}
+							</p>
+								
 								</Link>							
 							
 						</li>

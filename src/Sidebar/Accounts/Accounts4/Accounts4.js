@@ -2,6 +2,19 @@ import React from 'react';
 import { Navbar, Nav, Table, Col, Row, Form, Button } from 'react-bootstrap';
 import Nav1 from '../Nav/Nav';
 
+const headers = [
+	'Invoice No',
+	'GR No',
+	'Invoice Data',
+	'Credit Data',
+	'Payment Mode',
+	'Invoice Amount',
+	'Total Amount Paid + Return',
+	'Balance Due',
+	'Payment',
+	'Hold'
+];
+
 const Accounts4 = () => {
 	return (
 		<div className="mt-5">
@@ -11,15 +24,15 @@ const Accounts4 = () => {
 				<Row>
 					<Col>
 						<Form.Label>Customer Name</Form.Label>
-						<Form.Control type="text" />
+						<Form.Control className="round-input" type="text" />
 					</Col>
 					<Col>
 						<Form.Label>Mobile No.</Form.Label>
-						<Form.Control type="number" />
+						<Form.Control className="round-input" type="number" />
 					</Col>
 				</Row>
 				<Row style={{ justifyContent: 'center' }}>
-					<Button size="lg" type="submit" className="round-button">
+					<Button size="lg" type="submit" className="round">
 						Search
 					</Button>
 				</Row>
@@ -27,16 +40,9 @@ const Accounts4 = () => {
 					<Table striped className="mt-5">
 						<thead className="thead-light">
 							<tr>
-								<th scope="col">Invoice No</th>
-								<th scope="col">GR No</th>
-								<th scope="col">Invoice Data</th>
-								<th scope="col">Credit Data</th>
-								<th scope="col">Payment Mode</th>
-								<th scope="col">Invoice Amount</th>
-								<th scope="col">Total Amount Paid + Return</th>
-								<th scope="col">Balance Due</th>
-								<th scope="col">Payment</th>
-								<th scope="col">Hold</th>
+								{headers.map((i, k) => (
+									<th scope="col">{i}</th>
+								))}
 							</tr>
 						</thead>
 					</Table>

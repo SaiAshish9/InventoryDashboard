@@ -30,7 +30,6 @@ const buttons=[
 {
     buttons.map((i,k)=>(
 <div key={k} style={{marginLeft:10}}>
-
 <p style={{marginLeft:12,fontSize:13,color:'#999',fontWeight:'bold'}}>
 {i}
 </p>
@@ -50,11 +49,7 @@ style={{
 </div>
     ))
 }
-
-
-
 <button className='btn btn-primary'
-
 style={{fontSize:12,
 fontWeight:'bold',
 borderRadius:20,

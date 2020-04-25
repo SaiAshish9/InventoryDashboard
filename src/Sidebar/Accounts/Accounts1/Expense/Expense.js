@@ -31,7 +31,7 @@ const Expense = ({ history }) => {
 								: '2px solid blue'}`,
 							padding    : 7
 						}}
-						className="cm-link"
+						className="cm-link active"
 					>
 						Expense
 					</Link>
