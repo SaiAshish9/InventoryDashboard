@@ -23,7 +23,14 @@ const Nav = ({history}) => {
         }, 
         {
             name:'Settings',
-            path:'/sell/settings'
+            path:'/sell/settings',
+            path1:'/sell/settings/discount',
+            path2:'/sell/settings/sales',
+            path3:'/sell/settings/bill',
+            path4:'/sell/settings/sms',
+            path5:'/sell/settings/customer',
+            path6:'/sell/settings/batch',
+
         },
          {
             name:'Print Template',
@@ -31,7 +38,9 @@ const Nav = ({history}) => {
         },
            {
             name:'Order List',
-            path:'/sell/list'
+            path:'/sell/orderList',
+            path1:'/sell/orderList/estimate',
+
         },
     ]
 
@@ -49,7 +58,7 @@ const Nav = ({history}) => {
             padding:12,
             color:'white',
             textDecoration:'none',
-            background:`${history.location.pathname===i.path?'#333':''}`
+            background:`${[i.path,i.path1,i.path2,i.path3,i.path4,i.path5,i.path6].includes(history.location.pathname) ?'#333':''}`
             }}
         >
         {i.name}

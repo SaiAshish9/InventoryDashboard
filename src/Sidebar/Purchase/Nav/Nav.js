@@ -7,28 +7,20 @@ import { Navbar, Nav } from 'react-bootstrap';
 const Navbar1 = ({ history }) => {
 	const links = [
 		{
-			name : 'Inventory',
-			path : '/inventory'
+			name : 'Purchase',
+			path : '/purchase'
 		},
 		{
-			name : 'Update Inventory',
-			path : '/inventory/update'
+			name : 'History',
+			path : '/purchase/history'
 		},
 		{
-			name : 'Inventory Settings',
-			path : '/inventory/settings'
+			name : 'Return List',
+			path : '/purchase/return'
 		},
 		{
-			name : 'Product Master',
-			path : '/inventory/master'
-		},
-		{
-			name : 'Self Consumption',
-			path : '/inventory/self'
-		},
-		{
-			name : 'Barcode',
-			path : '/inventory/barcode'
+			name : 'Cancel List',
+			path : '/purchase/cancel'
 		}
 	];
 

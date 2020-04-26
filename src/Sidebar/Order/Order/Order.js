@@ -9,21 +9,21 @@ import Reorder from './Reorder'
 const Order = ({history}) => {
 
 
-const links=[
-    {
-        name:'By Vendor',
-        path:'/order'
-    },
-    {
-        name:'Reorder',
-        path:'/order/reorder'
-    },
-    {
-        path:'/order/byTransactions',
-        name:'By Transactions'
-    }
-]
 
+    const links=[
+        {
+            name:'By Vendor',
+            path:'/order'
+        },
+        {
+            name:'Reorder',
+            path:'/order/reorder'
+        },
+        {
+            path:'/order/byTransactions',
+            name:'By Transactions'
+        }
+    ]
     return (
         <div style={{height:'75vh',width:'100%'}}>
  

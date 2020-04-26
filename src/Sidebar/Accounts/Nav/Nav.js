@@ -13,7 +13,7 @@ const Navbar1 = ({ history }) => {
 		},
 		{
 			name : 'Customer Receipt',
-			path : '/account2'
+			path : '/account/receipt'
 		},
 		{
 			name : 'Cheque',
@@ -21,42 +21,53 @@ const Navbar1 = ({ history }) => {
 		},
 		{
 			name : 'Vendor Payment',
-			path : '/account4'
+			path : '/account/payment'
 		},
 		{
 			name : 'Vendor Payment History',
-			path : '/account5'
+			path : '/account/history'
 		},
 		{
 			name : 'Financial Year Settings',
-			path : '/account6'
+			path : '/account/year'
 		}
 	];
 
 	return (
-		<Navbar bg="dark" expand="lg" variant="dark" className="mt-5">
-			<Nav className="fill">
-				{links.map((i, k) => (
-					<Link
-						to={i.path}
-						key={k}
-						style={{
-							color           : `${history.location.pathname ===
-								i.path || history.location.pathname === i.path1
-								? 'white'
-								: '#999'}`,
-							backgroundColor : `${history.location.pathname ===
-								i.path || history.location.pathname === i.path1
-								? 'rgba(196,196,196,0.4)'
-								: ''}`,
-							margin          : 5
-						}}
-					>
-						{i.name}
-					</Link>
-				))}
-			</Nav>
-		</Navbar>
+		<div
+			style={{
+				paddingLeft : '10%',
+				display     : 'flex',
+				alignItems  : 'center',
+				height      : '7vh',
+				width       : '100%',
+				background  : 'black',
+				marginTop   : '3.8vh'
+			}}
+		>
+			{links.map((i, k) => (
+				<Link
+					key={k}
+					to={i.path}
+					style={{
+						margin         : 10,
+						height         : '7vh',
+						padding        : 12,
+						color          : 'white',
+						textDecoration : 'none',
+						background     : `${[
+							i.path,
+							i.path1,
+							i.path2
+						].includes(history.location.pathname)
+							? '#333'
+							: ''}`
+					}}
+				>
+					{i.name}
+				</Link>
+			))}
+		</div>
 	);
 };
 

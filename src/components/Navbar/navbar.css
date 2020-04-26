@@ -33,3 +33,14 @@
 .content > nav > ul > li > a {
 	font-size: 1.3rem;
 }
+
+#navbarSupportedContent.show {
+	background-color: #fff;
+	padding: 1rem;
+}
+
+button.navbar-toggler {
+	position: absolute;
+	top: 2rem;
+	right: 1rem;
+}
