@@ -56,12 +56,12 @@ const History = () => {
 				}}
 			>
 				<Col>
-					<Form.Label style={{ marginLeft: 30 }}>
+					<Form.Label style={{ marginLeft: 30,fontSize:13,color:'#999',fontWeight:'bold' }}>
 						Select Anyone
 					</Form.Label>
-					<Form.Control className="round-input" />
+			<input className="round-input" style={{outline:'none',boxShadow:'none'}} />
 				</Col>
-				<Button className="round" style={{ fontSize: 20 }}>
+				<Button  style={{ boxShadow: 'none',borderRadius:20,width:'7rem',fontSize: 15,fontWeight:'bold' ,backgroundColor : '#00a5e3'}}>
 					Search
 				</Button>
 			</Row>

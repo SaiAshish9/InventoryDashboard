@@ -1,11 +1,15 @@
 import React from 'react';
-import { Form, Container, Table, Row, Col } from 'react-bootstrap';
+import {Button, Form, Container, Table, Row, Col } from 'react-bootstrap';
 
 const DenominationChart = () => {
 	return (
-		<div className="mt-5">
-			<h5>Denomination Chart</h5>
-			<Container className="till-card-container card-container">
+		<div className="mt-5" style={{margginLeft:1}}>
+			<Container className="till-card-container card-container" 
+			
+			style={{marginLeft:10}}>
+							
+							<h5 style={{margin:20}}>Denomination Chart</h5>
+
 				<Form>
 					<Table>
 						<Row>
@@ -16,6 +20,7 @@ const DenominationChart = () => {
 								<Form.Control
 									className="round-input"
 									type="number"
+									style={{boxShadow: 'none',width:'10rem'}}
 								/>
 							</Col>
 						</Row>
@@ -24,9 +29,10 @@ const DenominationChart = () => {
 								<Form.Label>500x</Form.Label>
 							</Col>
 							<Col>
-								<Form.Control
+							<Form.Control
 									className="round-input"
 									type="number"
+									style={{boxShadow: 'none',width:'10rem'}}
 								/>
 							</Col>
 						</Row>
@@ -35,9 +41,10 @@ const DenominationChart = () => {
 								<Form.Label>100x</Form.Label>
 							</Col>
 							<Col>
-								<Form.Control
+							<Form.Control
 									className="round-input"
 									type="number"
+									style={{boxShadow: 'none',width:'10rem'}}
 								/>
 							</Col>
 						</Row>
@@ -46,9 +53,10 @@ const DenominationChart = () => {
 								<Form.Label>50x</Form.Label>
 							</Col>
 							<Col>
-								<Form.Control
+							<Form.Control
 									className="round-input"
 									type="number"
+									style={{boxShadow: 'none',width:'10rem'}}
 								/>
 							</Col>
 						</Row>
@@ -57,9 +65,10 @@ const DenominationChart = () => {
 								<Form.Label>20x</Form.Label>
 							</Col>
 							<Col>
-								<Form.Control
+							<Form.Control
 									className="round-input"
 									type="number"
+									style={{boxShadow: 'none',width:'10rem'}}
 								/>
 							</Col>
 						</Row>
@@ -68,9 +77,10 @@ const DenominationChart = () => {
 								<Form.Label>10x</Form.Label>
 							</Col>
 							<Col>
-								<Form.Control
+							<Form.Control
 									className="round-input"
 									type="number"
+									style={{boxShadow: 'none',width:'10rem'}}
 								/>
 							</Col>
 						</Row>
@@ -79,11 +89,21 @@ const DenominationChart = () => {
 								<Form.Label>Coins</Form.Label>
 							</Col>
 							<Col>
-								<Form.Control type="number" />
-							</Col>
+							<Form.Control
+									className="round-input"
+									type="number"
+									style={{boxShadow: 'none',width:'10rem'}}
+								/>							</Col>
 						</Row>
 					</Table>
 				</Form>
+
+				<Row style={{ justifyContent: 'center' }}>
+			<Button  style={{ boxShadow: 'none',borderRadius:20,width:'7rem',fontSize: 15,fontWeight:'bold' ,backgroundColor : '#00a5e3'}}>
+					ADD
+				</Button>
+			</Row>
+
 			</Container>
 		</div>
 	);

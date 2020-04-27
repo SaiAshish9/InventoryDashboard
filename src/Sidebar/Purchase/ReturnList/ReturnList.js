@@ -59,25 +59,16 @@ const ReturnList = () => {
 		<div className="mt-5" style={{ padding: '1rem' }}>
 			<Row style={{ margin: '0' }}>
 				{SearchArea.map((i, k) => (
-					<Col>
-						<Form.Label
-							style={{
-								textAlign  : 'left',
-								width      : '100%',
-								marginLeft : 20
-							}}
-						>
-							{i}
-						</Form.Label>
-						<Form.Control type="text" className="round-input" />
+					<Col key={k}>
+					<Form.Label style={{ marginLeft: 30,fontSize:13,color:'#999',fontWeight:'bold' }}>
+						{i}
+					</Form.Label>
+					<input className="round-input" style={{outline:'none',boxShadow:'none'}} />
 					</Col>
 				))}
 			</Row>
 			<Row style={{ justifyContent: 'center', margin: '0' }}>
-				<Button
-					className="round"
-					style={{ fontSize: 20, fontWeight: 'bold' }}
-				>
+			<Button  style={{ boxShadow: 'none',borderRadius:20,width:'7rem',fontSize: 15,fontWeight:'bold' ,backgroundColor : '#00a5e3'}}>
 					Search
 				</Button>
 			</Row>

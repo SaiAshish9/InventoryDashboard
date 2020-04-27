@@ -32,7 +32,7 @@ const PriceTable = () => {
 					{headers.map(() => (
 						<td>
 							<Col lg="10">
-								<Form.Control type="text" />
+							<Form.Control type="text" style={{boxShadow:'none'}}/>
 							</Col>
 						</td>
 					))}

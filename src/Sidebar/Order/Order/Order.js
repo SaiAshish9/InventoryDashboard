@@ -39,7 +39,7 @@ const Order = ({history}) => {
             width:'12rem',
             height:'2.7rem',
             borderRadius:20,
-            background:`${history.location.pathname===i.path?'#00a5e3':''}`,
+            background:`${history.location.pathname===i.path?'#00a5e3':'#fff'}`,
             fontWeight:'bold',
             textAlign:'center',
             paddingTop:8,

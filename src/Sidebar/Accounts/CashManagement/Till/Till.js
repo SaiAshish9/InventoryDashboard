@@ -7,7 +7,8 @@ import Nav1 from '../../Nav/Nav';
 
 const Till = () => {
 	return (
-		<div className="mt-5">
+		<div className="mt-5" style={{position:'relative',bottom:'12vh'}} >
+
 			{/* <Nav1 /> */}
 			<br />
 			{/* <Navbar>
@@ -24,11 +25,7 @@ const Till = () => {
 					<TillChart />
 				</Col>
 			</Row>
-			<Row style={{ justifyContent: 'center' }}>
-				<Button size="lg" className="round">
-					ADD
-				</Button>
-			</Row>
+			
 		</div>
 	);
 };

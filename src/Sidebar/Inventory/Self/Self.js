@@ -43,7 +43,7 @@ const Self = () => {
 									}}
 								>
 									{/* <Col> */}
-									<Form.Control type="text" />
+									<Form.Control style={{boxShadow:'none'}} type="text" />
 									{/* </Col> */}
 								</td>
 							))}
@@ -52,8 +52,9 @@ const Self = () => {
 				</Table>
 			</Row>
 			<Row style={{ margin: '0', padding: '1rem' }}>
-				<Button size="lg" className="round">
-					+
+			<Button  style={{ marginLeft:10, boxShadow: 'none',borderRadius:20,width:'3rem',fontSize: 15,fontWeight:'bold' ,backgroundColor : '#00a5e3'}}>
+					<b>
+					+	</b>
 				</Button>
 			</Row>
 		</div>

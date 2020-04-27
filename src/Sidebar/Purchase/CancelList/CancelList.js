@@ -42,60 +42,39 @@ const CancelList = () => {
 		<div className="mt-5" style={{ padding: '1rem' }}>
 			<Row style={{ margin: '0' }}>
 				<Col>
-					<Form.Label
-						style={{
-							textAlign  : 'left',
-							width      : '100%',
-							marginLeft : 20
-						}}
-					>
+				<Form.Label style={{ marginLeft: 30,fontSize:13,color:'#999',fontWeight:'bold' }}>
+
 						From
 					</Form.Label>
-					<Form.Control type="date" className="round-input" />
+					<Form.Control style={{boxShadow:'none'}} type="date" className="round-input" />
 				</Col>
 				<Col>
-					<Form.Label
-						style={{
-							textAlign  : 'left',
-							width      : '100%',
-							marginLeft : 20
-						}}
-					>
+				<Form.Label style={{ marginLeft: 30,fontSize:13,color:'#999',fontWeight:'bold' }}>
+
 						To
 					</Form.Label>
-					<Form.Control type="date" className="round-input" />
+			<input className="round-input" style={{outline:'none',boxShadow:'none'}} />
 				</Col>
 				<Col>
-					<Form.Label
-						style={{
-							textAlign  : 'left',
-							width      : '100%',
-							marginLeft : 20
-						}}
-					>
+				<Form.Label style={{ marginLeft: 30,fontSize:13,color:'#999',fontWeight:'bold' }}>
+
 						Select Anyone
 					</Form.Label>
-					<Form.Control type="text" className="round-input" />
+					<input className="round-input" style={{outline:'none',boxShadow:'none'}} />
 				</Col>
 				<Col>
-					<Form.Label
-						style={{
-							textAlign  : 'left',
-							width      : '100%',
-							marginLeft : 20
-						}}
-					>
+				<Form.Label style={{ marginLeft: 30,fontSize:13,color:'#999',fontWeight:'bold' }}>
+
 						Enter Values
 					</Form.Label>
-					<Form.Control type="text" className="round-input" />
+					<input className="round-input" style={{outline:'none',boxShadow:'none'}} />
 				</Col>
 				<Col>
-					<Button
-						className="round"
-						style={{ fontSize: 20, fontWeight: 'bold' }}
-					>
-						Search
-					</Button>
+				<Row style={{ justifyContent: 'center', margin: '0' }}>
+				<Button  style={{ boxShadow: 'none',borderRadius:20,width:'7rem',fontSize: 15,fontWeight:'bold' ,backgroundColor : '#00a5e3'}}>
+					Search
+				</Button>
+			</Row>
 				</Col>
 			</Row>
 			<Row style={{ margin: '0' }}>

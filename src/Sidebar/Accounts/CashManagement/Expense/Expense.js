@@ -59,7 +59,7 @@ const Expense = ({ history }) => {
 					</Link>
 				</Nav>
 			</Navbar> */}
-			<Card />
+			<Card  />
 		</div>
 	);
 };

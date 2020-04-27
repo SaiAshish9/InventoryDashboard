@@ -27,7 +27,7 @@ const Update = () => {
 					<div>
 						<p
 							className="legend"
-							style={{ backgroundColor: `${i.color}` }}
+							style={{ backgroundColor: `${i.color}`,cursor:'pointer' }}
 						/>
 						<p>{i.name}</p>
 					</div>

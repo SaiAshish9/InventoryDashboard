@@ -3,6 +3,7 @@ import Sidebar from './components/Sidebar/sidebar';
 import Cnavbar from './components/Navbar/navbar';
 
 import { Route, Switch } from 'react-router-dom';
+
 import Branch from './Sidebar/Branch/Branch';
 import Inventory from './Sidebar/Inventory/Inventory';
 import Profile from './Sidebar/Profile/Profile';
@@ -11,6 +12,7 @@ import Sell from './Sidebar/Sell/Sell';
 import Users from './Sidebar/Users/Users';
 import Purchase from './Sidebar/Purchase/Purchase';
 import Account from './Sidebar/Accounts/Accounts';
+import Reports from './Sidebar/Reports/Reports';
 
 const Home = () => (
 	<div
@@ -48,6 +50,7 @@ function App() {
 						<Route path="/user" component={Users} />
 						<Route path="/purchase" component={Purchase} />
 						<Route path="/account" component={Account} />
+						<Route path="/reports" component={Reports} />
 					</Switch>
 				</div>
 			</div>

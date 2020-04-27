@@ -7,18 +7,20 @@ const Year = () => {
 			<Table className="mt-5">
 				<Row style={{ margin: '0' }}>
 					<Col>
-						<Form.Label>From</Form.Label>
-						<Form.Control className="round-input" type="date" />
+					<Form.Label style={{ marginLeft: 20,fontSize:13,color:'#999',fontWeight:'bold' }}>
+							From</Form.Label>
+						<Form.Control style={{boxShadow: 'none'}} className="round-input" type="date" />
 					</Col>
 					<Col>
-						<Form.Label>To</Form.Label>
-						<Form.Control className="round-input" type="date" />
+					<Form.Label style={{ marginLeft: 20,fontSize:13,color:'#999',fontWeight:'bold' }}>
+							To</Form.Label>
+							<Form.Control style={{boxShadow: 'none'}} className="round-input" type="date" />
 					</Col>
 				</Row>
 				<Row style={{ justifyContent: 'center', margin: '0' }}>
-					<Button size="lg" type="submit" className="round">
-						Save
-					</Button>
+				<Button  style={{ boxShadow: 'none',borderRadius:20,width:'7rem',fontSize: 15,fontWeight:'bold' ,backgroundColor : '#00a5e3'}}>
+					Save
+				</Button>
 				</Row>
 			</Table>
 		</div>

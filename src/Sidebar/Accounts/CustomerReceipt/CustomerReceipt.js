@@ -13,20 +13,26 @@ const CustomerReceipt = () => {
 	return (
 		<div className="mt-5" style={{ overflow: 'hidden' }}>
 			<Table className="mt-5" responsive="md">
-				<Row style={{ margin: '0' }}>
-					<Col>
-						<Form.Label>Customer Name</Form.Label>
-						<Form.Control className="round-input" type="text" />
+			<Row style={{ margin: '0' }}>
+				<Col style={{textAlign: 'center'}} >
+					<Form.Label style={{ marginLeft: -40,fontSize:13,color:'#999',fontWeight:'bold' }}>
+						Customer Name
+					</Form.Label><br/>
+					<input className="round-input" style={{outline:'none',boxShadow:'none'}} />
+					</Col> 
+
+					<Col style={{textAlign: 'center'}} >
+					<Form.Label style={{ marginLeft: -60,fontSize:13,color:'#999',fontWeight:'bold' }}>
+						Mobile No.
+					</Form.Label><br/>
+					<input className="round-input" style={{outline:'none',boxShadow:'none'}} />
 					</Col>
-					<Col>
-						<Form.Label>Mobile No.</Form.Label>
-						<Form.Control className="round-input" type="number" />
-					</Col>
+
 				</Row>
 				<Row style={{ justifyContent: 'center' }}>
-					<Button size="lg" type="submit" className="round">
-						Search
-					</Button>
+				<Button  style={{ boxShadow: 'none',borderRadius:20,width:'7rem',fontSize: 15,fontWeight:'bold' ,backgroundColor : '#00a5e3'}}>
+					Search
+				</Button>
 				</Row>
 				<Row style={{ margin: '0' }}>
 					<Table className="mt-5">

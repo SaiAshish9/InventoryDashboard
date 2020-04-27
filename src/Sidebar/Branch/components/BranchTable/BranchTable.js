@@ -16,7 +16,7 @@ const BranchTable = () => {
 		<div className="mt-5">
 			<Table bordered>
 				<thead className="thead-dark">
-					<tr>{headers.map((i) => <th scope="col">{i}</th>)}</tr>
+					<tr style={{fontSize:12}}>{headers.map((i) => <th scope="col">{i}</th>)}</tr>
 				</thead>
 			</Table>
 		</div>

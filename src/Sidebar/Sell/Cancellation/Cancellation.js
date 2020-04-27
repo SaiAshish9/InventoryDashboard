@@ -82,7 +82,7 @@ padding:'10px 20px'
 {
     [...Array(headers.length).keys()].map((a,b)=>(
 
-        <td key={b} style={{fontSize:12,backgroundColor:'white',color:'#333',borderRight:'0.1px solid #999',fontWeight:'bold'}}>
+        <td key={b} style={{fontSize:12,backgroundColor:'white',color:'#999',borderRight:'0.1px solid #999',fontWeight:'bold'}}>
         thanos
         </td>
     ))

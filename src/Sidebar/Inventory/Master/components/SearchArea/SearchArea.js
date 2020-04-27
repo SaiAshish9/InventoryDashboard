@@ -10,12 +10,15 @@ const SearchArea = () => {
 					className="search-inline round-input"
 					type="text"
 					placeholder="Search"
+					style={{boxShadow: 'none'}}
 				/>
-				<Button className="round" type="submit">
+				<Button  style={{ boxShadow: 'none',borderRadius:20,width:'7rem',fontSize: 15,fontWeight:'bold' ,backgroundColor : '#00a5e3'}}>
 					Search
 				</Button>
-				<Button className="round">BulkUpdate</Button>
-				<Button className="round">Import/Export</Button>
+				<Button  style={{ boxShadow: 'none',borderRadius:20,width:'7rem',fontSize: 15,fontWeight:'bold' ,backgroundColor : '#00a5e3'}}>
+					BulkUpdate</Button>
+					<Button  style={{ boxShadow: 'none',borderRadius:20,width:'9rem',fontSize: 15,fontWeight:'bold' ,backgroundColor : '#00a5e3'}}>
+					Import/Export</Button>
 			</div>
 		</div>
 	);

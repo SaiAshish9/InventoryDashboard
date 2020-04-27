@@ -89,7 +89,7 @@ color:'#f4f4f4'
 {
     [...Array(headers.length-3).keys()].map((a,b)=>(
 
-        <td key={b} style={{fontSize:12,backgroundColor:'white',color:'#333',borderRight:'0.1px solid #999',fontWeight:'bold'}}>
+        <td key={b} style={{fontSize:12,backgroundColor:'white',color:'#999',borderRight:'0.1px solid #999',fontWeight:'bold'}}>
             groot
         </td>
     ))

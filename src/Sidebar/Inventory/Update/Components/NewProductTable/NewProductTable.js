@@ -23,7 +23,7 @@ const NewProductTable = () => {
 				<tr>
 					{headers.map(() => (
 						<td>
-							<Form.Control type="text" />
+							<Form.Control type="text" style={{boxShadow:'none'}}/>
 						</td>
 					))}
 				</tr>

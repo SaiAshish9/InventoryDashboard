@@ -14,11 +14,12 @@ const Settings = () => {
 							width  : '50%'
 						}}
 					>
-						<Form.Control className="round-input" type="text" />
+						<Form.Control style={{boxShadow: 'none'}} className="round-input" type="text" />
 					</div>
 				</Form.Group>
-				<Button className="round">Save</Button>
-			</Form>
+				<Button  style={{ boxShadow: 'none',borderRadius:20,width:'7rem',fontSize: 15,fontWeight:'bold' ,backgroundColor : '#00a5e3'}}>
+					Search
+				</Button>			</Form>
 		</div>
 	);
 };

@@ -16,6 +16,7 @@ const Order = () => {
 			<Navbar1 />
 			<Switch>
 				<Route exact path="/account" component={CashManagement} />
+				<Route exact path="/account/till" component={CashManagement} />
 				<Route path="/account/receipt" component={CustomerReceipt} />
 				<Route path="/account/payment" component={VendorPayment} />
 				<Route path="/account/history" component={History} />

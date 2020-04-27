@@ -73,26 +73,28 @@ const Users = () => {
 				ADD USER
 			</h4>
 			<Row className="mt-5">
-				<Col lg="4" style={{ paddingLeft: '1rem' }}>
-					<Form.Label style={{ marginLeft: 10 }}>Name</Form.Label>
-					<Form.Control className="round-input" type="text" />
+			<Col style={{marginLeft:30}}>
+					<Form.Label style={{ marginLeft: 30,fontSize:13,color:'#999',fontWeight:'bold' }}>
+						Name
+					</Form.Label><br/>
+			<input className="round-input" style={{outline:'none',boxShadow:'none'}} />
 				</Col>
-				<Col lg="3">
-					<Form.Label style={{ marginLeft: 10 }}>
-						Mobile No
-					</Form.Label>
-					<Form.Control className="round-input" type="number" />
+				<Col style={{marginLeft:30}}>
+					<Form.Label style={{ marginLeft: 30,fontSize:13,color:'#999',fontWeight:'bold' }}>
+						Mobile No.
+						</Form.Label><br/>
+			<input className="round-input" style={{outline:'none',boxShadow:'none'}} />
 				</Col>
-				<Col lg="3">
-					<Form.Label style={{ marginLeft: 10 }}>ID</Form.Label>
-					<Form.Control className="round-input" type="text" />
+				<Col style={{marginLeft:30}}>
+					<Form.Label style={{ marginLeft: 30,fontSize:13,color:'#999',fontWeight:'bold' }}>
+						ID
+						</Form.Label><br/>
+			<input className="round-input" style={{outline:'none',boxShadow:'none'}} />
 				</Col>
 				<Col lg="2">
-					<Button
-						className="round"
-						style={{ fontWeight: 'bold', fontSize: 20 }}
-					>
-						+
+				<Button  style={{fontSize:20, boxShadow: 'none',borderRadius:'50%',fontWeight:'bolder' ,backgroundColor : '#00a5e3'}}>
++
+						
 					</Button>
 				</Col>
 			</Row>
@@ -105,30 +107,14 @@ const Users = () => {
 							style={{ justifyContent: 'center', width: '17rem' }}
 						>
 							<Col style={{ padding: '0' }}>
-								<Button
-									className="round"
-									style={{
-										width           : '8rem',
-										fontSize        : 20,
-										fontWeight      : 'bold',
-										padding         : '0',
-										backgroundColor : '#00a5e3'
-									}}
-								>
+							<Button  style={{ boxShadow: 'none',borderRadius:20,width:'7rem',fontSize: 15,fontWeight:'bold' ,backgroundColor : '#00a5e3'}}>
+
 									{i.btn1}
 								</Button>
 							</Col>
 							<Col style={{ padding: '0' }}>
-								<Button
-									className="round"
-									style={{
-										width           : '8rem',
-										fontSize        : 20,
-										fontWeight      : 'bold',
-										padding         : '0',
-										backgroundColor : '#00a5e3'
-									}}
-								>
+							<Button  style={{ boxShadow: 'none',borderRadius:20,width:'7rem',fontSize: 15,fontWeight:'bold' ,backgroundColor : '#00a5e3'}}>
+
 									{i.btn2}
 								</Button>
 							</Col>
@@ -217,7 +203,7 @@ const Users = () => {
 							</tr>
 						</tbody>
 					</Table>
-					<Table responsive="md" style={{ backgroundColor: '#eee' }}>
+					<Table responsive="md" style={{ backgroundColor: '#eee',height:'40vh' }}>
 						{buttonsRight.map((i) => (
 							<Row
 								style={{
@@ -226,32 +212,14 @@ const Users = () => {
 								}}
 							>
 								<Col style={{ padding: '0' }}>
-									<Button
-										className="round"
-										style={{
-											width           : '8rem',
-											fontSize        : 20,
-											fontWeight      : 'bold',
-											padding         : '0',
-											backgroundColor : '#00a5e3',
-											marginBottom    : '3rem'
-										}}
-									>
+								<Button  style={{ boxShadow: 'none',borderRadius:20,width:'7rem',fontSize: 15,fontWeight:'bold' ,backgroundColor : '#00a5e3'}}>
+
 										{i.btn1}
 									</Button>
 								</Col>
 								<Col style={{ padding: '0' }}>
-									<Button
-										className="round"
-										style={{
-											width           : '8rem',
-											fontSize        : 20,
-											fontWeight      : 'bold',
-											padding         : '0',
-											marginBottom    : '3rem',
-											backgroundColor : '#00a5e3'
-										}}
-									>
+								<Button  style={{ boxShadow: 'none',borderRadius:20,width:'7rem',fontSize: 15,fontWeight:'bold' ,backgroundColor : '#00a5e3'}}>
+
 										{i.btn2}
 									</Button>
 								</Col>

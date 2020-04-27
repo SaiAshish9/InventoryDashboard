@@ -14,14 +14,15 @@ const Barcode = () => {
 						className="round-input"
 						type="text"
 						placeholder="Enter Product Name"
+						style={{boxShadow:'none'}}
 					/>
 				</Col>
 				<Col>
-					<Form.Control className="round-input" as="select" />
+					<Form.Control style={{boxShadow: 'none'}} className="round-input" as="select" />
 				</Col>
 			</Row>
 			<div style={{ textAlign: 'center' }}>
-				<Button size="lg" className="round">
+			<Button  style={{ boxShadow: 'none',borderRadius:20,width:'7rem',fontSize: 15,fontWeight:'bold' ,backgroundColor : '#00a5e3'}}>
 					Load
 				</Button>
 			</div>
