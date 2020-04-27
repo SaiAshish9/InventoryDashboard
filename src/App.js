@@ -13,19 +13,8 @@ import Users from './Sidebar/Users/Users';
 import Purchase from './Sidebar/Purchase/Purchase';
 import Account from './Sidebar/Accounts/Accounts';
 import Reports from './Sidebar/Reports/Reports';
+import Dashboard from './Sidebar/Dashboard/Dashboard'
 
-const Home = () => (
-	<div
-		style={{
-			height    : '100vh',
-			width     : '60vw',
-			textAlign : 'center',
-			marginTop : '30vh'
-		}}
-	>
-		home
-	</div>
-);
 
 function App() {
   return (
@@ -41,7 +30,7 @@ function App() {
 					style={{ backgroundColor: '#f4f4f4', minHeight:'100vh',maxHeight: '300vh' }}
 				>
 					<Switch>
-						<Route exact path="/" component={Home} />
+						<Route exact path="/" component={Dashboard} />
 						<Route path="/sell" component={Sell} />
 						<Route path="/inventory" component={Inventory} />
 						<Route path="/branch" component={Branch} />

@@ -16,7 +16,7 @@ import React from 'react';
 export default [
 	{
 		name:'Dashboard', 
-		path:'/dashboard', 
+		path:'/', 
 		icon:<FaChartLine />
 
 	},
