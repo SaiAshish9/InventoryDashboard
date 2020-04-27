@@ -17,7 +17,7 @@ const Navbar1 = ({ history }) => {
 		},
 		{
 			name : 'Cheque',
-			path : ''
+			path : '/account/cheque'
 		},
 		{
 			name : 'Vendor Payment',

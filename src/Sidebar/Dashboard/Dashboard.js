@@ -2,6 +2,8 @@ import React,{useEffect,useState} from 'react'
 
 import {Container,Row,Col,ProgressBar,Table} from 'react-bootstrap'
 
+import {Line as LineChart,Bar as BarChart} from 'react-chartjs'
+
 import {AiOutlineUsergroupDelete} from 'react-icons/ai'
 
 import md5 from 'md5'
@@ -25,7 +27,7 @@ const [flag,setFlagUrl]=useState(null)
 const [avatar,setAvatar]=useState(null)
 
 
-useEffect(()=>(
+const fetchRecords=()=>(
 
 fetch(flagUrl)
 .then(res=>res.json())
@@ -34,8 +36,12 @@ fetch(flagUrl)
     setAvatar(`http://gravatar.com/avatar/${md5(Math.random())}?d=identicon`)
 })
 
-),[])
+)
 
+
+useEffect(()=>{
+    fetchRecords()
+},[])
 
 
     const headers=[
@@ -55,10 +61,143 @@ fetch(flagUrl)
         'Activity'
     ]
     
+const data=[{
+    data:'Medicine Rate',
+    color:'#7f78d2'
+},{
+    data:'Medicine Trends',
+    color:'#00a5e3'
+},{
+    data:'Medicine Trends',
+    color:'#f2a51a'
+},{
+    data:'Medicine Trends',
+    color:'#d63447'
+}
+]
 
     return (
         <Container style={{marginTop:'10vh',height:'70vh',width:'100%'}}>
             
+
+
+<div style={{ marginBottom:'5vh',display:'flex',justifyContent:'space-around',flexWrap:'wrap',width:'100%',height:'30vh'}}>
+
+
+{
+    data.map((i,k)=>(
+        
+        <div 
+        key={k}
+        style={{
+            background:`${i.color}`,
+            height:'18vh',
+            width:'20%',
+            borderRadius:20,
+            display:'flex',justifyContent:'center',alignItems:'center',flexDirection:'column'
+            }}>
+        <p style={{fontSize:15,color:'#fff',fontWeight:'bold',marginTop:10}}>
+            {i.data}
+        </p>
+
+<div style={{width:'10rem',height:'10vh',display:'flex',justifyContent:'center'}}>
+
+<LineChart
+
+options={ {
+  maintainAspectRatio: false,
+  responsive: true ,
+      scales: {
+      yAxes: [
+        {
+          ticks: {
+            min: 0,
+            max: 100
+          }
+        }
+      ]
+  },
+}}
+data={{
+labels: ['Mon','Tue','Wed','Thu'],
+datasets: [{
+//   label: ,
+  data: shuffle([10,20,30,40,50,60]),
+  backgroundColor: `${i.color}`,
+  fillColor: `${i.color}` ,
+  strokeColor: "#fff",
+  pointColor: "#fff",
+  pointStrokeColor: "#fff",
+  pointHighlightFill: "#fff",
+  pointHighlightStroke: "#fff",
+}]
+}} 
+/>
+
+</div>
+       
+
+        </div>
+
+    ))
+}
+
+
+
+</div>
+
+
+<Container style={{ flexDirection:'column',marginBottom:'10vh',width:'100%',height:'40vh',display:'flex',justifyContent:'center'}}>
+
+<p style={{
+    textAlign:'start',
+    fontWeight:'bold',
+    color:'#999'
+}} >
+    Traffic
+</p>
+
+
+<LineChart
+
+options={{
+  maintainAspectRatio:false,
+responsive:true
+
+}}
+data={{
+
+  
+  labels: ["January", "February", "March", "April", "May", "June", "July"],
+datasets: [{
+  // label: "First ",
+  fillColor: "#fff",
+  strokeColor: "#24a06d",
+  pointColor: "#24a06d",
+  pointStrokeColor: "#fff",
+  pointHighlightFill: "#fff",
+  pointHighlightStroke: "rgba(220,220,220,1)",
+  data: shuffle([10, 59, 80, 81, 56, 55, 40])
+}, {
+  // label: "Second ",
+  fillColor: "rgba(151,187,205,0.2)",
+  strokeColor: "rgba(151,187,205,1)",
+  pointColor: "rgba(151,187,205,1)",
+  pointStrokeColor: "#fff",
+  pointHighlightFill: "#fff",
+  pointHighlightStroke: "rgba(151,187,205,1)",
+  data: shuffle([28, 48, 40, 19, 86, 27, 90])
+}]}}
+          /> 
+        </Container>
+        
+    
+
+
+
+
+
+
 
 <Row>
 
