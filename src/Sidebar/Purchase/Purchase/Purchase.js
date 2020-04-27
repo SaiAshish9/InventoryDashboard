@@ -60,7 +60,6 @@ const headers2 = [
 ];
 
 const Purchase = () => {
-<<<<<<< HEAD
 
 
 const headers=[
@@ -558,4 +557,3 @@ export default Purchase
 };
 
 export default Purchase;
->>>>>>> 2b8b06ffbfadb39451299712042e6410b903845d
