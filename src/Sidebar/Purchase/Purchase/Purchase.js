@@ -2,13 +2,12 @@ import React,{useState} from 'react'
 
 import {Container,Table} from 'react-bootstrap'
 
-import {FaRegCalendarAlt} from 'react-icons/fa'
+import {Row, Col, Form, Button ,FaRegCalendarAlt} from 'react-icons/fa'
 import { Calendar } from "@y0c/react-datepicker";
 
 import "../../Order/Order/calendar.scss";
 
 
-import { Row, Col, Form, Table, Button } from 'react-bootstrap';
 
 const row1 = [
 	'GR Number',
